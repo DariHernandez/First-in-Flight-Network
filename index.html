@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+
+    <!-- Aos Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Page data -->
+    <title>First in Flight Network</title>
+
+    <!-- TODO -->
+    <meta name="description" content="Page details">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="Dari Developer">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="svg-facebook" class="svg_elem" viewBox="0 0 24 24">
+            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+        </symbol>
+        <symbol id="svg-menu" class="svg_elem" viewBox="0 0 24 24">
+            <path d="m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-4 11.25c0 .414-.336.75-.75.75h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75zm0-3.248c0 .414-.336.75-.75.75h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75zm0-3.252c0 .414-.336.75-.75.75h-8.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h8.5c.414 0 .75.336.75.75z" fill-rule="nonzero"/>
+        </symbol>
+    </svg>
+
+    <header class="clossed header basic hide" id="header">
+        <div class="content">
+            <a class="logo" href="#hader">
+                <img src="./imgs/logo.png" alt="company Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+            <button class="btn display">
+                <svg>
+                    <use xlink:href="#svg-arrow"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <header class="regular-width header burger" id="header">
+        <img src="imgs/logo.png" alt="company logo" class="logo">
+        <button class="menu">
+            <svg>
+                <use xlink:href="#svg-menu"></use>
+            </svg>
+        </button>
+        <nav class="collapsed">
+            <ul>
+                <li>
+                    <button class="close">
+                        <img src="./imgs/btn-close.svg" alt="close icon">
+                    </button>
+                </li>
+                <li>
+                    <a href="#about-us">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-services">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a href="#why-hire-us">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#our-work">
+                        Our work
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="btn cta">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            
+        </section>
+
+        <section class="about" id="about">
+            
+        </section>
+
+        <section class="services" id="services">
+
+        </section>
+
+        <section class="products" id="products">
+            
+        </section>
+
+        <section class="contact" id="contact">
+            <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
+                <h2>Contact Us</h2>
+                <div class="separator"></div>
+                <fieldset>
+                    <input type="text" name="name" id="name" placeholder="name" required>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                    <input type="submit" value="Submit" class="btn submit">
+                </fieldset>    
+                <input type="hidden" name="user" id="user" value="user_name">
+                <input type="hidden" name="api_key" id="api_key" value="api_key">
+                <input type="hidden" name="redirect" id="redirect" value="">
+            </form>
+        </section>
+    </main>
+
+    <footer class="full-width" id="footer">
+        <small>© Company name, Powered By <a href="mailto:darideveloper@gmail.com">Dari Developer</a></small>
+    </footer>
+
+
+    <!-- Aos imports -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="code/aos.js"></script> -->
+
+    <!-- Slider -->
+    <!-- <script src="./code/splide.min.js"></script> -->
+
+    <!-- Alerts imports -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+
+    <script src="./code/loader.js" type="module"></script>
+</body>
+</html>

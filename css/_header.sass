@@ -1,0 +1,92 @@
+#header
+    
+
+    &.burger
+
+        $logo-width: 100px
+        $menu-btn-width: 60px
+        $responsive-tablet: 600px
+        $responsive-phone: 300px
+
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 20px
+        position: relative
+
+        .logo
+            width: $logo-width
+
+        button
+            display: none
+
+        nav
+            ul
+                display: flex
+                align-items: center
+                justify-content: flex-end
+
+                li
+                    list-style: none
+                    margin-left: 10px
+
+                    a
+                        padding: 10px
+                        color: $color-c
+                        transition-duration: 0.5s
+                        display: inline-block
+
+                        &:hover:not(.btn)
+                            color: $color-a
+
+        @media screen and (max-width: $responsive-tablet)
+            flex-direction: column
+            margin: 0
+
+        @media screen and (max-width: 1000px)
+            flex-direction: row
+            justify-content: space-between
+            padding: 0 50px
+            width: calc(100% - 100px)
+
+            button
+                display: inline-block
+                width: $menu-btn-width
+                height: auto
+                background: none
+                border: none
+
+                svg
+                    width: 100%
+                    height: auto
+
+
+            nav 
+                position: fixed
+                top: 0
+                right: 0
+                padding: 0 50px
+                padding-top: 30px
+                height: 200vh
+                transition-duration: 0.5s
+                z-index: 2
+                background-color: $color-d
+                box-shadow: 5px 2px 15px -1px rgba(black,0.35)
+
+                &.collapsed
+                    right: -250px
+
+
+                ul
+                    flex-direction: column
+                    margin: 0
+                    padding: 0
+
+                    li
+                        margin: 0 
+                        padding: 0
+
+                        a
+                            padding: 20px 0
+                            font-size: 20px
