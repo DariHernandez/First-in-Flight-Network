@@ -7,8 +7,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-family: "regular-font", sans-serif;
+  background-color: #ffffff;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 18px;
 }
 
 .wrapper-img {
@@ -25,11 +26,8 @@ body {
   height: 100%;
 }
 
-p {
-  font-size: 18px;
-}
 p.small {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .hide {
@@ -38,14 +36,14 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #8f8f8f;
+  color: #0101a4;
 }
 
 .regular-width {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1250px) {
   .regular-width {
     padding: 0 5%;
     width: 90%;
@@ -58,8 +56,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-  font-family: "title-font", cursive;
-  color: #fff;
+  font-family: "Rubik", sans-serif;
+  color: #f4a61e;
 }
 
 *:focus {
@@ -75,27 +73,37 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 .shadow {
-  box-shadow: 4px 4px 30px -15px #8f8f8f;
+  box-shadow: 4px 4px 30px -15px #0101a4;
 }
 
 .btn {
   display: inline-block;
+  transition-duration: 0.3s;
 }
-
+.btn.cta {
+  background: linear-gradient(90deg, rgb(0, 0, 116) 0%, rgb(1, 1, 164) 62%, rgb(20, 20, 196) 100%);
+  color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0px 6px 26px -7px rgba(1, 1, 164, 0.3);
+}
+.btn.cta:hover {
+  box-shadow: 0px 6px 26px -2px rgba(1, 1, 164, 0.5);
+  transform: translateY(-5px);
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: #f4a61e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8f8f8f;
+  background: #0101a4;
   margin-top: -5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #323232;
+  background: #111111;
 }
 
 #header.burger {
@@ -120,15 +128,19 @@ h1, h2, h3, h4, h5, h6, .title {
 #header.burger nav ul li {
   list-style: none;
   margin-left: 10px;
+  padding: 10px;
 }
 #header.burger nav ul li a {
-  padding: 10px;
-  color: #323232;
   transition-duration: 0.5s;
   display: inline-block;
+  padding: 10px;
+  color: #111111;
+  border-bottom: 2px solid #ffffff;
+  transition-duration: 0.3s;
 }
 #header.burger nav ul li a:hover:not(.btn) {
-  color: #8f8f8f;
+  color: #0101a4;
+  border-bottom: 2px solid #0101a4;
 }
 @media screen and (max-width: 600px) {
   #header.burger {
@@ -163,7 +175,7 @@ h1, h2, h3, h4, h5, h6, .title {
     height: 200vh;
     transition-duration: 0.5s;
     z-index: 2;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 5px 2px 15px -1px rgba(0, 0, 0, 0.35);
   }
   #header.burger nav.collapsed {

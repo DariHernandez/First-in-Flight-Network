@@ -30,15 +30,19 @@
                 li
                     list-style: none
                     margin-left: 10px
+                    padding: 10px
 
                     a
-                        padding: 10px
-                        color: $color-c
                         transition-duration: 0.5s
                         display: inline-block
+                        padding: 10px
+                        color: $color-c
+                        border-bottom: 2px solid $color-d
+                        transition-duration: $transition-duration
 
                         &:hover:not(.btn)
                             color: $color-a
+                            border-bottom: 2px solid $color-a
 
         @media screen and (max-width: $responsive-tablet)
             flex-direction: column
