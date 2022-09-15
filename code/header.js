@@ -1,18 +1,13 @@
-
-const header_btn = document.querySelector ("#header .btn.display")
+const header_btn_display = document.querySelector ("#header .btn.display")
+const header_btn_close = document.querySelector ("#header .btn.close")
 const header = document.querySelector('#header')
 
-header_btn.addEventListener ("click", function (e) {
-    header.classList.toggle ("clossed")
-    console.log ("click")
+console.log (header_btn_display)
+
+header_btn_display.addEventListener ("click", function (e) {
+    header.classList.remove ("clossed")
 })
 
-// Update header when scroll
-window.addEventListener ("scroll", function (e) {
-    // Only add class for desktop sizes
-    if (window.scrollY == 0 || window.matchMedia("(max-width: 800px)").matches) {
-        header.classList.remove ("scroll")
-    } else {
-        header.classList.add ("scroll")
-    }
+header_btn_close.addEventListener ("click", function (e) {
+    header.classList.add ("clossed")
 })

@@ -4,11 +4,10 @@
     &.burger
 
         $logo-width: 100px
-        $menu-btn-width: 60px
-        $responsive-tablet: 600px
-        $responsive-phone: 300px
+        $menu-btn-width: 80px
+        $responsive-tablet: 1000px
+        $responsive-phone: 680px
 
-        width: 100%
         display: flex
         align-items: center
         justify-content: space-between
@@ -18,7 +17,7 @@
         .logo
             width: $logo-width
 
-        button
+        .btn.display, .btn.close
             display: none
 
         nav
@@ -26,10 +25,11 @@
                 display: flex
                 align-items: center
                 justify-content: flex-end
+                padding: 0
 
                 li
                     list-style: none
-                    margin-left: 10px
+                    margin: 0 5px
                     padding: 10px
 
                     a
@@ -48,23 +48,29 @@
             flex-direction: column
             margin: 0
 
-        @media screen and (max-width: 1000px)
+        @media screen and (max-width: $responsive-phone)
+
             flex-direction: row
             justify-content: space-between
-            padding: 0 50px
-            width: calc(100% - 100px)
+            padding: 0 5%
 
-            button
+            // Hide nav
+            &.clossed
+                nav
+                    right: -250px
+
+            .btn.cta
+                display: none
+
+            .btn.display, .btn.close
                 display: inline-block
                 width: $menu-btn-width
                 height: auto
-                background: none
-                border: none
+                fill: $color-a
 
                 svg
                     width: 100%
                     height: auto
-
 
             nav 
                 position: fixed
@@ -78,10 +84,6 @@
                 background-color: $color-d
                 box-shadow: 5px 2px 15px -1px rgba(black,0.35)
 
-                &.collapsed
-                    right: -250px
-
-
                 ul
                     flex-direction: column
                     margin: 0
@@ -89,8 +91,14 @@
 
                     li
                         margin: 0 
-                        padding: 0
+                        padding: 10px 0
+
+                        &:first-child
+                            padding: 0
 
                         a
-                            padding: 20px 0
+                            padding: 10px 0
                             font-size: 20px
+
+                            &:first-child
+                                padding: 0

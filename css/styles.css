@@ -79,6 +79,8 @@ h1, h2, h3, h4, h5, h6, .title {
 .btn {
   display: inline-block;
   transition-duration: 0.3s;
+  background: none;
+  border: none;
 }
 .btn.cta {
   background: linear-gradient(90deg, rgb(0, 0, 116) 0%, rgb(1, 1, 164) 62%, rgb(20, 20, 196) 100%);
@@ -107,7 +109,6 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 
 #header.burger {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,17 +118,18 @@ h1, h2, h3, h4, h5, h6, .title {
 #header.burger .logo {
   width: 100px;
 }
-#header.burger button {
+#header.burger .btn.display, #header.burger .btn.close {
   display: none;
 }
 #header.burger nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0;
 }
 #header.burger nav ul li {
   list-style: none;
-  margin-left: 10px;
+  margin: 0 5px;
   padding: 10px;
 }
 #header.burger nav ul li a {
@@ -142,27 +144,31 @@ h1, h2, h3, h4, h5, h6, .title {
   color: #0101a4;
   border-bottom: 2px solid #0101a4;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   #header.burger {
     flex-direction: column;
     margin: 0;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
   #header.burger {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 50px;
-    width: calc(100% - 100px);
+    padding: 0 5%;
   }
-  #header.burger button {
+  #header.burger.clossed nav {
+    right: -250px;
+  }
+  #header.burger .btn.cta {
+    display: none;
+  }
+  #header.burger .btn.display, #header.burger .btn.close {
     display: inline-block;
-    width: 60px;
+    width: 80px;
     height: auto;
-    background: none;
-    border: none;
+    fill: #0101a4;
   }
-  #header.burger button svg {
+  #header.burger .btn.display svg, #header.burger .btn.close svg {
     width: 100%;
     height: auto;
   }
@@ -178,9 +184,6 @@ h1, h2, h3, h4, h5, h6, .title {
     background-color: #ffffff;
     box-shadow: 5px 2px 15px -1px rgba(0, 0, 0, 0.35);
   }
-  #header.burger nav.collapsed {
-    right: -250px;
-  }
   #header.burger nav ul {
     flex-direction: column;
     margin: 0;
@@ -188,11 +191,17 @@ h1, h2, h3, h4, h5, h6, .title {
   }
   #header.burger nav ul li {
     margin: 0;
+    padding: 10px 0;
+  }
+  #header.burger nav ul li:first-child {
     padding: 0;
   }
   #header.burger nav ul li a {
-    padding: 20px 0;
+    padding: 10px 0;
     font-size: 20px;
+  }
+  #header.burger nav ul li a:first-child {
+    padding: 0;
   }
 }
 
