@@ -2,10 +2,12 @@ $color-a: #0101a4
 $color-b: #f4a61e
 $color-c: #111111
 $color-d: #ffffff
+$gray-color: rgba($color-c, 0.05)
 $transition-duration: 0.3s
 $regular-width: 1200px
 $regular-width-media-query: $regular-width + 50px
-$gradiant-bg: linear-gradient(90deg, rgba(0,0,116,1) 0%, rgba(1,1,164,1) 62%, rgba(20,20,196,1) 100%)
+$gradiant-bg-blue: linear-gradient(90deg, rgba(0,0,116,1) 0%, rgba(1,1,164,1) 62%, rgba(20,20,196,1) 100%)
+$gradiant-bg-black: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(41,41,41,1) 100%)
     
 html
     margin: 0
@@ -58,6 +60,9 @@ a
 h1, h2, h3, h4, h5, h6, .title
     font-family: 'Rubik', sans-serif
     color: $color-b
+
+h2
+    font-size: 34px
 
 *:focus
     outline: none
