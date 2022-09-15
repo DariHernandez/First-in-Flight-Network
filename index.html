@@ -99,24 +99,24 @@
                         </span>
                     </a>
                 </div>
+                <div class="contact">
+                    <h2>Contact us</h2>
+                    <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
+                        <div class="separator"></div>
+                        <fieldset>
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
+                            <input type="email" name="email" id="email" placeholder="Correo" required>
+                            <input type="text" name="message" id="message" placeholder="Mensaje" required>
+                            <input type="submit" value="Submit" class="btn cta">
+                        </fieldset>    
+                        <input type="hidden" name="user" id="user" value="user_name">
+                        <input type="hidden" name="api_key" id="api_key" value="api_key">
+                        <input type="hidden" name="redirect" id="redirect" value="">
+                    </form>                
+                </div>
             </div>
             <img src="./imgs/logo.png" alt="First in Flight Network" class="logo bg">
             <div class="image" hide></div>
-            <div class="contact">
-                <h2>Contact us</h2>
-                <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
-                    <h2>Contact Us</h2>
-                    <div class="separator"></div>
-                    <fieldset>
-                        <input type="text" name="name" id="name" placeholder="name" required>
-                        <input type="email" name="email" id="email" placeholder="email" required>
-                        <input type="submit" value="Submit" class="btn submit">
-                    </fieldset>    
-                    <input type="hidden" name="user" id="user" value="user_name">
-                    <input type="hidden" name="api_key" id="api_key" value="api_key">
-                    <input type="hidden" name="redirect" id="redirect" value="">
-                </form>                
-            </div>
         </section>
 
         <section class="about" id="about">

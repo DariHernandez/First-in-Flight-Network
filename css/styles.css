@@ -229,7 +229,9 @@ h1, h2, h3, h4, h5, h6, .title {
   background-color: rgba(17, 17, 17, 0.05);
 }
 #hero .content-wrapper {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 350px;
+  position: relative;
 }
 #hero .content-wrapper .content {
   width: 50%;
@@ -244,11 +246,42 @@ h1, h2, h3, h4, h5, h6, .title {
 }
 #hero .content-wrapper .video-link span.text {
   margin-left: 20px;
-  border-bottom: 2px solid rgba(1, 1, 164, 0);
+  border-bottom: 2px solid rgba(17, 17, 17, 0.05);
   padding: 8px 10px;
 }
 #hero .content-wrapper .video-link:hover span.text {
-  border-bottom: 2px solid #0101a4;
+  border-bottom: 2px solid rgba(17, 17, 17, 0.05);
+}
+#hero .content-wrapper .contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  z-index: 3;
+  margin-bottom: 100px;
+}
+#hero .content-wrapper .contact h2 {
+  margin-top: 0;
+}
+#hero .content-wrapper .contact form, #hero .content-wrapper .contact fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#hero .content-wrapper .contact form input:not(.btn.cta), #hero .content-wrapper .contact fieldset input:not(.btn.cta) {
+  border: none;
+  background: none;
+  border: 2px solid rgba(17, 17, 17, 0.1);
+  padding: 12px 20px;
+  transition-duration: 0.3s;
+  margin-right: 10px;
+}
+#hero .content-wrapper .contact form input:not(.btn.cta)[name=message], #hero .content-wrapper .contact fieldset input:not(.btn.cta)[name=message] {
+  width: 250px;
+}
+#hero .content-wrapper .contact form input:not(.btn.cta):focus, #hero .content-wrapper .contact fieldset input:not(.btn.cta):focus {
+  border: 2px solid rgba(17, 17, 17, 0.3);
 }
 #hero .image {
   position: absolute;
@@ -272,9 +305,6 @@ h1, h2, h3, h4, h5, h6, .title {
   z-index: 1;
   opacity: 0.1;
   margin-top: 150px;
-}
-#hero .contact {
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

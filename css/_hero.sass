@@ -1,9 +1,13 @@
 #hero
+    $gray-color: rgba($color-c, 0.05)
+
     position: relative
-    background-color: rgba($color-c, 0.05)
+    background-color: $gray-color
 
     .content-wrapper
-        padding: 100px 0
+        padding-top: 100px
+        padding-bottom: 350px
+        position: relative
 
         .content
             width: 50%
@@ -18,12 +22,47 @@
 
             span.text
                 margin-left: 20px
-                border-bottom: 2px solid rgba($color-a, 0)
+                border-bottom: 2px solid $gray-color
                 padding: 8px 10px
 
             &:hover
                 span.text
-                    border-bottom: 2px solid $color-a
+                    border-bottom: 2px solid $gray-color
+
+        .contact
+            position: absolute
+            bottom: 0
+            left: 0
+            padding: 30px 40px
+            background-color: $color-d
+            z-index: 3
+            margin-bottom: 100px
+
+            h2
+                margin-top: 0
+
+            form, fieldset
+                border: none
+                padding: 0
+                margin: 0
+
+                input:not(.btn.cta)
+                    border: none
+                    background: none
+                    border: 2px solid rgba($gray-color, 0.1)
+                    padding: 12px 20px
+                    transition-duration: $transition-duration
+                    margin-right: 10px
+
+                    &[name="message"]
+                        width: 250px
+
+                    &:focus
+                        border: 2px solid rgba($gray-color, 0.3)
+
+                
+
+
 
 
     .image
@@ -48,10 +87,6 @@
         z-index: 1
         opacity: 0.1
         margin-top: 150px
-
-
-    .contact
-        display: none
 
     // @media screen and (max-width: $regular-width-media-query)
         
