@@ -354,4 +354,25 @@ h2 {
   margin: 0;
 }
 
+#speciality .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+#speciality .cards .card {
+  padding: 30px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(17, 17, 17) 35%, rgb(41, 41, 41) 100%);
+}
+#speciality .cards .card img {
+  width: 100%;
+  height: auto;
+}
+#speciality .cards .card h3 {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=styles.css.map */
