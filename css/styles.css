@@ -360,6 +360,9 @@ h2 {
   margin: 0;
 }
 
+#speciality {
+  padding: 50px 0;
+}
 #speciality .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
