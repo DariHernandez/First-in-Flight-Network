@@ -34,16 +34,19 @@
         <symbol id="svg-close" class="svg_elem" viewBox="0 0 24 24">
             <path d="m21 3.998c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-8.991 6.932 2.717-2.718c.146-.146.338-.219.53-.219.405 0 .751.325.751.75 0 .193-.073.384-.219.531l-2.718 2.717 2.728 2.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.531-.219l-2.728-2.728-2.728 2.728c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l2.728-2.728-2.722-2.722c-.146-.147-.219-.338-.219-.531 0-.425.346-.749.75-.749.192 0 .384.073.53.219z" fill-rule="nonzero"/>
         </symbol>
+        <symbol id="svg-play" class="svg_elem" viewBox="0 0 24 24">
+            <path d="M3 22v-20l18 10-18 10z"/>
+        </symbol>
     </svg>
 
     <header class="regular-width header burger clossed" id="header">
-        <img src="imgs/logo.png" alt="company logo" class="logo">
+        <img src="imgs/logo.png" alt="First in Flight Network logo" class="logo">
         <button class="btn display">
             <svg>
                 <use xlink:href="#svg-menu"></use>
             </svg>
         </button>
-        <nav>
+        <nav class="trans">
             <ul>
                 <li>
                     <button class="btn close">
@@ -53,23 +56,23 @@
                     </button>
                 </li>
                 <li>
-                    <a href="#about-us">
+                    <a href="#" class="trans">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#our-services">
-                        About us
+                    <a href="#about" class="trans">
+                        Sobre nosotros
                     </a>
                 </li>
                 <li>
-                    <a href="#why-hire-us">
-                        Services
+                    <a href="#services" class="trans">
+                        Servicios
                     </a>
                 </li>
                 <li>
-                    <a href="#our-work">
-                        Our work
+                    <a href="#our-work" class="trans">
+                        Nuestro trabajo
                     </a>
                 </li>
             </ul>
@@ -78,8 +81,42 @@
     </header>
 
     <main>
-        <section class="hero" id="hero">
-            
+        <section class="hero full-width" id="hero">
+            <div class="content-wrapper regular-width">
+                <div class="content">
+                    <h1>Texto principal... Lorem ipsum dolor sit amet</h1>
+                    <p>
+                        Información de la empresa... lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt turpis. 
+                    </p>
+                    <a href="#" class="video-link">
+                        <span class="btn circle">
+                            <svg>
+                                <use xlink:href="#svg-play"></use>
+                            </svg>
+                        </span>
+                        <span class="text trans">
+                            Mira un video sobre nosotros
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <img src="./imgs/logo.png" alt="First in Flight Network" class="logo bg">
+            <div class="image" hide></div>
+            <div class="contact">
+                <h2>Contact us</h2>
+                <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
+                    <h2>Contact Us</h2>
+                    <div class="separator"></div>
+                    <fieldset>
+                        <input type="text" name="name" id="name" placeholder="name" required>
+                        <input type="email" name="email" id="email" placeholder="email" required>
+                        <input type="submit" value="Submit" class="btn submit">
+                    </fieldset>    
+                    <input type="hidden" name="user" id="user" value="user_name">
+                    <input type="hidden" name="api_key" id="api_key" value="api_key">
+                    <input type="hidden" name="redirect" id="redirect" value="">
+                </form>                
+            </div>
         </section>
 
         <section class="about" id="about">
@@ -92,21 +129,6 @@
 
         <section class="products" id="products">
             
-        </section>
-
-        <section class="contact hide" id="contact">
-            <form action="https://darideveloper.pythonanywhere.com/contactforms-api/" method="post">
-                <h2>Contact Us</h2>
-                <div class="separator"></div>
-                <fieldset>
-                    <input type="text" name="name" id="name" placeholder="name" required>
-                    <input type="email" name="email" id="email" placeholder="email" required>
-                    <input type="submit" value="Submit" class="btn submit">
-                </fieldset>    
-                <input type="hidden" name="user" id="user" value="user_name">
-                <input type="hidden" name="api_key" id="api_key" value="api_key">
-                <input type="hidden" name="redirect" id="redirect" value="">
-            </form>
         </section>
     </main>
 

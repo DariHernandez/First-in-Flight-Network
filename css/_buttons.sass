@@ -3,9 +3,9 @@
     transition-duration: $transition-duration
     background: none
     border: none
-
+    
     &.cta
-        background: linear-gradient(90deg, rgba(0,0,116,1) 0%, rgba(1,1,164,1) 62%, rgba(20,20,196,1) 100%)
+        background: $gradiant-bg
         color: $color-d
         padding: 15px 30px
         box-shadow: 0px 6px 26px -7px rgba($color-a, 0.3)
@@ -15,3 +15,20 @@
             transform: translateY(-5px)
 
         &:active
+            box-shadow: 5px 5px 5px 0px rgba($color-c, 0.3), inset 4px 4px 15px 0px rgba($color-c, 0.3), 5px 5px 15px 5px rgba(0,0,0,0)
+
+
+    &.circle
+        background: $gradiant-bg
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+
+        svg
+            fill: white
+            width: 40%
+            height: 40%
+            padding-left: 5px
