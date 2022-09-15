@@ -98,6 +98,16 @@ h2 {
   border-bottom: 2px solid #373785;
 }
 
+.logo {
+  opacity: 0.8;
+  filter: grayscale(0.4);
+  transition-duration: 0.3s;
+}
+.logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 .btn {
   display: inline-block;
   transition-duration: 0.3s;
@@ -172,13 +182,6 @@ h2 {
 }
 #header.burger .logo {
   width: 100px;
-  opacity: 0.8;
-  filter: grayscale(0.4);
-  transition-duration: 0.3s;
-}
-#header.burger .logo:hover {
-  filter: grayscale(0);
-  opacity: 1;
 }
 #header.burger .btn.display, #header.burger .btn.close {
   display: none;
@@ -445,6 +448,114 @@ h2 {
 }
 #videos .video-card .text {
   width: 45%;
+}
+
+#footer {
+  margin-top: 150px;
+  padding-bottom: 20px;
+  background-color: #2d2d35;
+  position: relative;
+}
+#footer .contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 70px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: linear-gradient(90deg, rgb(38, 38, 106) 0%, rgb(55, 55, 133) 35%, rgb(75, 75, 164) 100%);
+  box-shadow: 0px 12px 32px -12px rgba(0, 0, 0, 0.75);
+}
+#footer .contact-card h2 {
+  color: #ffffff;
+}
+#footer .contact-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+#footer .contact-card a:hover {
+  transform: translateY(-15px);
+}
+#footer .contact-card a svg {
+  width: 50px;
+  height: 50px;
+  fill: #ffffff;
+  margin: 20px;
+}
+#footer .widgets {
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 14px;
+}
+#footer .widgets a {
+  color: #ffffff;
+}
+#footer .widgets .socials {
+  width: 350px;
+  text-align: center;
+}
+#footer .widgets .socials .logo {
+  width: 100px;
+  height: auto;
+}
+#footer .widgets .socials .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .widgets .socials .icons a:hover {
+  opacity: 0.6;
+}
+#footer .widgets .socials .icons a svg {
+  width: 25px;
+  height: 25px;
+  fill: #ffffff;
+  margin: 0 10px;
+}
+#footer .widgets .menu {
+  width: 600px;
+}
+#footer .widgets .menu ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#footer .widgets .menu ul li {
+  margin: 0 auto;
+  list-style: none;
+  padding: 10px 0;
+  text-align: left;
+  width: 100%;
+}
+#footer .widgets .menu ul li a {
+  font-size: 16px;
+  padding: 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+#footer .widgets .menu ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+#footer small {
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #ffffff;
+  margin-top: 50px;
+}
+#footer small a {
+  font-weight: bold;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
