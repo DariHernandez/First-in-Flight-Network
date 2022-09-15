@@ -3,11 +3,11 @@
     transition-duration: $transition-duration
     background: none
     border: none
+    padding: 15px 30px
     
     &.cta
         background: $gradiant-bg-blue
         color: $color-d
-        padding: 15px 30px
         box-shadow: 0px 6px 26px -7px rgba($color-a, 0.3)
 
         &:hover
@@ -17,6 +17,20 @@
         &:active
             box-shadow: 5px 5px 5px 0px rgba($color-c, 0.3), inset 4px 4px 15px 0px rgba($color-c, 0.3), 5px 5px 15px 5px rgba(0,0,0,0)
 
+    &.bordered
+        background: $color-a
+        color: $color-d
+        border: 3px solid rgba($color-d, 0)
+
+        &:hover
+            box-shadow: none
+            transform: none
+            border: 3px solid rgba($color-d, 1)
+            background: rgba($color-a, 0)
+
+
+        &:active
+            box-shadow: none
 
     &.circle
         background: $gradiant-bg-blue
@@ -26,6 +40,7 @@
         display: flex
         align-items: center
         justify-content: center
+        padding: 0
 
         svg
             fill: white

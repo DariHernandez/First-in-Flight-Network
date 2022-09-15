@@ -89,11 +89,11 @@ h2 {
   transition-duration: 0.3s;
   background: none;
   border: none;
+  padding: 15px 30px;
 }
 .btn.cta {
   background: linear-gradient(90deg, rgb(38, 38, 106) 0%, rgb(55, 55, 133) 35%, rgb(75, 75, 164) 100%);
   color: #ffffff;
-  padding: 15px 30px;
   box-shadow: 0px 6px 26px -7px rgba(55, 55, 133, 0.3);
 }
 .btn.cta:hover {
@@ -103,6 +103,20 @@ h2 {
 .btn.cta:active {
   box-shadow: 5px 5px 5px 0px rgba(45, 45, 53, 0.3), inset 4px 4px 15px 0px rgba(45, 45, 53, 0.3), 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+.btn.bordered {
+  background: #373785;
+  color: #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+.btn.bordered:hover {
+  box-shadow: none;
+  transform: none;
+  border: 3px solid white;
+  background: rgba(55, 55, 133, 0);
+}
+.btn.bordered:active {
+  box-shadow: none;
+}
 .btn.circle {
   background: linear-gradient(90deg, rgb(38, 38, 106) 0%, rgb(55, 55, 133) 35%, rgb(75, 75, 164) 100%);
   width: 50px;
@@ -111,6 +125,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
 }
 .btn.circle svg {
   fill: white;
