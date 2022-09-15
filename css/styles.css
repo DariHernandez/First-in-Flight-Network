@@ -84,6 +84,20 @@ h2 {
   transition-duration: 0.3s;
 }
 
+.video-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.video-link span.text {
+  margin-left: 20px;
+  border-bottom: 2px solid rgba(55, 55, 133, 0);
+  padding: 8px 10px;
+}
+.video-link:hover span.text {
+  border-bottom: 2px solid #373785;
+}
+
 .btn {
   display: inline-block;
   transition-duration: 0.3s;
@@ -163,7 +177,8 @@ h2 {
   transition-duration: 0.3s;
 }
 #header.burger .logo:hover {
-  filter: grayscale(0.1);
+  filter: grayscale(0);
+  opacity: 1;
 }
 #header.burger .btn.display, #header.burger .btn.close {
   display: none;
@@ -263,19 +278,6 @@ h2 {
 #hero .content-wrapper h1 {
   font-size: 45px;
 }
-#hero .content-wrapper .video-link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-#hero .content-wrapper .video-link span.text {
-  margin-left: 20px;
-  border-bottom: 2px solid rgba(55, 55, 133, 0);
-  padding: 8px 10px;
-}
-#hero .content-wrapper .video-link:hover span.text {
-  border-bottom: 2px solid #373785;
-}
 #hero .content-wrapper .contact {
   position: absolute;
   bottom: 0;
@@ -319,17 +321,6 @@ h2 {
   width: 50%;
   height: 100%;
   z-index: 2;
-}
-#hero .logo {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  opacity: 0.1;
-  margin-top: 150px;
 }
 
 #about {
@@ -425,6 +416,35 @@ h2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+#videos {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#videos .video-card {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#videos .video-card img {
+  width: 45%;
+  height: auto;
+}
+#videos .video-card img:first-child {
+  transform: translate(10px, 10px);
+  box-shadow: -30px 30px 0px -1px #373785;
+}
+#videos .video-card img:last-child {
+  transform: translate(-10px, -10px);
+  box-shadow: 30px 30px 0px -1px #373785;
+}
+#videos .video-card .text {
+  width: 45%;
 }
 
 /*# sourceMappingURL=styles.css.map */
