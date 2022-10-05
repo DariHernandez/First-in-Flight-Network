@@ -8,7 +8,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker">
+  <a href="https://github.com/darideveloper/Nayipzi-Gutierrez-Broker">
     <img src="./imgs/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -17,11 +17,11 @@
   <p align="center">
     Landing page with contact forms an animations, based in the design of <a href="https://www.behance.net/gallery/105051993/Edge_One-landing-page?tracking_source=search_projects%7Clanding%20page%20">Mahmudul Manik</a> <br />
     <br />
-    <a href="https://darihernandez.github.io/Nayipzi-Gutierrez-Broker/">Visit Web Page</a>
+    <a href="https://darideveloper.github.io/Nayipzi-Gutierrez-Broker/">Visit Web Page</a>
     ·
-    <a href="https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker/issues">Report Bug</a>
+    <a href="https://github.com/darideveloper/Nayipzi-Gutierrez-Broker/issues">Report Bug</a>
     ·
-    <a href="https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker/issues">Request Feature</a>
+    <a href="https://github.com/darideveloper/Nayipzi-Gutierrez-Broker/issues">Request Feature</a>
   </p>
 </div>
 
@@ -51,11 +51,11 @@
 
 Desktop
 
-[![Web page Screen Shot Desktop][product-screenshot-desktop]](https://darihernandez.github.io/Nayipzi-Gutierrez-Broker/)
+[![Web page Screen Shot Desktop][product-screenshot-desktop]](https://darideveloper.github.io/Nayipzi-Gutierrez-Broker/)
 
 Mobile
 
-[![Web page Screen Shot Mobile][product-screenshot-mobile]](https://darihernandez.github.io/Nayipzi-Gutierrez-Broker/)
+[![Web page Screen Shot Mobile][product-screenshot-mobile]](https://darideveloper.github.io/Nayipzi-Gutierrez-Broker/)
 
 
 
@@ -81,7 +81,7 @@ Mobile
 </a>
 
 <a href="https://michalsnik.github.io/aos/">
-  <img src="https://raw.githubusercontent.com/DariHernandez/DariHernandez/main/imgs/aos.svg" width="80" alt="aos" title="aos">
+  <img src="https://raw.githubusercontent.com/darideveloper/darideveloper/main/imgs/aos.svg" width="80" alt="aos" title="aos">
 </a>
 
 <a href="https://sweetalert2.github.io/">
@@ -121,7 +121,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Dari Developer - darideveloper@gmail.com
 
-Project Link: [https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker](https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker)
+Project Link: [https://github.com/darideveloper/Nayipzi-Gutierrez-Broker](https://github.com/darideveloper/Nayipzi-Gutierrez-Broker)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,8 +129,8 @@ Project Link: [https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker](https:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-shield]: https://img.shields.io/github/license/DariHernandez/Nayipzi-Gutierrez-Broker.svg?style=for-the-badge
-[license-url]: https://github.com/DariHernandez/Nayipzi-Gutierrez-Broker/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/darideveloper/Nayipzi-Gutierrez-Broker.svg?style=for-the-badge
+[license-url]: https://github.com/darideveloper/Nayipzi-Gutierrez-Broker/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/francisco-dari-hernandez-6456b6181
 [product-screenshot-desktop]: imgs/screenshot-desktop.gif
