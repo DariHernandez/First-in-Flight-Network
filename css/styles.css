@@ -389,29 +389,29 @@ h2 {
   color: #ffffff;
 }
 
-#new {
+#values {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 50px 0;
   background-color: #00288b;
 }
-#new .content {
+#values .content {
   text-align: center;
 }
-#new .content h2, #new .content h3 {
+#values .content h2, #values .content h3 {
   color: #ffb100;
 }
-#new .content h2 {
+#values .content h2 {
   margin-top: 0;
 }
-#new .content .cards {
+#values .content .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-#new .content .cards .card {
+#values .content .cards .card {
   margin: 20px 0;
 }
-#new .content .cards .card img {
+#values .content .cards .card img {
   width: 150px;
   border-radius: 50%;
 }
@@ -528,15 +528,14 @@ h2 {
 #footer .widgets .menu ul {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  gap: 20px;
 }
 #footer .widgets .menu ul li {
   margin: 0 auto;
   list-style: none;
   padding: 10px 0;
   text-align: left;
-  width: 100%;
 }
 #footer .widgets .menu ul li a {
   font-size: 16px;
