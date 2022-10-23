@@ -3,7 +3,6 @@
 
     .cards
 
-        background: $gradiant-bg-black
         color: $color-d
         display: grid
         grid-template-columns: repeat(4, 1fr)
@@ -11,9 +10,8 @@
 
         .card
             text-align: center
-            width: calc(100% - 100px)
-            padding: 25px
-            margin: 0 25px
+            width: 100%
+            padding: 30px 0
             display: flex
             text-align: center
             justify-content: center
@@ -23,10 +21,10 @@
             transition-duration: $transition-duration
             box-shadow: 0px 0px 67px -45px rgba(0,0,0,0)
 
-            &:hover
-                transform: translateY(-30px)
-                background: $gradiant-bg-blue
-                box-shadow: 0px 0px 67px -45px rgba(0,0,0,0.75)
+            // &:hover
+            //     transform: translateY(-30px)
+            //     background: $gradiant-bg-blue
+            //     box-shadow: 0px 0px 67px -45px rgba(0,0,0,0.75)
 
             img
                 width: 150px
@@ -36,3 +34,15 @@
             h3
                 color: $color-d
                 margin: 10px 0
+
+            &:nth-child(1), &:nth-child(3)
+                background-color: $color-a
+
+            &:nth-child(2)
+                background-color: $color-b
+
+            &:nth-child(4)
+                background-color: rgba($color-c, 0.3)
+
+                h3
+                    color: $color-a
