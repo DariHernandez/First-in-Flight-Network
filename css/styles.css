@@ -36,7 +36,7 @@ p.small {
 
 a {
   text-decoration: none;
-  color: #00288b;
+  color: #0133af;
 }
 
 .regular-width {
@@ -57,7 +57,7 @@ a {
 
 h1, h2, h3, h4, h5, h6, .title {
   font-family: "Rubik", sans-serif;
-  color: #ffb100;
+  color: #feba19;
 }
 
 h2 {
@@ -77,7 +77,7 @@ h2 {
 }
 
 .shadow {
-  box-shadow: 4px 4px 30px -15px #00288b;
+  box-shadow: 4px 4px 30px -15px #0133af;
 }
 
 .trans {
@@ -91,11 +91,11 @@ h2 {
 }
 .video-link span.text {
   margin-left: 20px;
-  border-bottom: 2px solid rgba(0, 40, 139, 0);
+  border-bottom: 2px solid rgba(1, 51, 175, 0);
   padding: 8px 10px;
 }
 .video-link:hover span.text {
-  border-bottom: 2px solid #00288b;
+  border-bottom: 2px solid #0133af;
 }
 
 .logo {
@@ -118,27 +118,27 @@ h2 {
 .btn.cta {
   background: linear-gradient(90deg, #00288b 0%, #0031ad 62%, #0f41be 100%);
   color: #ffffff;
-  box-shadow: 0px 6px 26px -7px rgba(0, 40, 139, 0.3);
+  box-shadow: 0px 6px 26px -7px rgba(1, 51, 175, 0.3);
 }
 .btn.cta:hover {
-  box-shadow: 0px 6px 26px -2px rgba(0, 40, 139, 0.5);
+  box-shadow: 0px 6px 26px -2px rgba(1, 51, 175, 0.5);
   transform: translateY(-5px);
 }
 .btn.cta:active {
-  box-shadow: 5px 5px 5px 0px rgba(17, 17, 17, 0.3), inset 4px 4px 15px 0px rgba(17, 17, 17, 0.3), 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px rgba(53, 53, 53, 0.3), inset 4px 4px 15px 0px rgba(53, 53, 53, 0.3), 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .btn.cta.yellow {
-  background: #ffb100;
+  background: #feba19;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
 }
 .btn.cta.yellow:hover {
-  box-shadow: 0px 6px 26px -2px rgba(255, 177, 0, 0.5);
+  box-shadow: 0px 6px 26px -2px rgba(254, 186, 25, 0.5);
   transform: translateY(-5px);
 }
 .btn.bordered {
-  background: #00288b;
+  background: #0133af;
   color: #ffffff;
   border: 3px solid rgba(255, 255, 255, 0);
 }
@@ -146,7 +146,7 @@ h2 {
   box-shadow: none;
   transform: none;
   border: 3px solid white;
-  background: rgba(0, 40, 139, 0);
+  background: rgba(1, 51, 175, 0);
 }
 .btn.bordered:active {
   box-shadow: none;
@@ -177,11 +177,11 @@ h2 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00288b;
+  background: #0133af;
   margin-top: -5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #111111;
+  background: #353535;
 }
 
 #header.burger {
@@ -210,12 +210,12 @@ h2 {
 #header.burger nav ul li a {
   display: inline-block;
   padding: 10px;
-  color: #111111;
+  color: #353535;
   border-bottom: 4px solid #ffffff;
 }
 #header.burger nav ul li a:hover:not(.btn) {
-  color: #00288b;
-  border-bottom: 4px solid #ffb100;
+  color: #0133af;
+  border-bottom: 4px solid #feba19;
 }
 @media screen and (max-width: 1000px) {
   #header.burger {
@@ -239,7 +239,7 @@ h2 {
     display: inline-block;
     width: 80px;
     height: auto;
-    fill: #00288b;
+    fill: #0133af;
   }
   #header.burger .btn.display svg, #header.burger .btn.close svg {
     width: 100%;
@@ -279,7 +279,7 @@ h2 {
 
 #hero {
   position: relative;
-  background-color: #00288b;
+  background-color: #0133af;
 }
 #hero .content-wrapper {
   padding-top: 100px;
@@ -303,7 +303,7 @@ h2 {
   content: "";
   width: 60px;
   height: 8px;
-  background-color: #ffb100;
+  background-color: #feba19;
   display: inline-block;
 }
 #hero .content-wrapper .contact {
@@ -327,7 +327,7 @@ h2 {
 #hero .content-wrapper .contact form input:not(.btn.cta), #hero .content-wrapper .contact fieldset input:not(.btn.cta) {
   border: none;
   background: none;
-  border: 2px solid rgba(17, 17, 17, 0.1);
+  border: 2px solid rgba(53, 53, 53, 0.1);
   padding: 12px 20px;
   transition-duration: 0.3s;
   margin-right: 10px;
@@ -336,7 +336,7 @@ h2 {
   width: 250px;
 }
 #hero .content-wrapper .contact form input:not(.btn.cta):focus, #hero .content-wrapper .contact fieldset input:not(.btn.cta):focus {
-  border: 2px solid rgba(17, 17, 17, 0.3);
+  border: 2px solid rgba(53, 53, 53, 0.3);
 }
 #hero .image {
   position: absolute;
@@ -383,16 +383,16 @@ h2 {
   margin: 10px 0;
 }
 #about .cards .card:nth-child(1), #about .cards .card:nth-child(3) {
-  background-color: #00288b;
+  background-color: #0133af;
 }
 #about .cards .card:nth-child(2) {
-  background-color: #ffb100;
+  background-color: #feba19;
 }
 #about .cards .card:nth-child(4) {
-  background-color: rgba(17, 17, 17, 0.3);
+  background-color: rgba(53, 53, 53, 0.3);
 }
 #about .cards .card:nth-child(4) h3 {
-  color: #00288b;
+  color: #0133af;
 }
 
 #speciality {
@@ -423,13 +423,13 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   padding: 50px 0;
-  background-color: #00288b;
+  background-color: #0133af;
 }
 #values .content {
   text-align: center;
 }
 #values .content h2, #values .content h3 {
-  color: #ffb100;
+  color: #feba19;
 }
 #values .content h2 {
   margin-top: 0;
@@ -440,7 +440,7 @@ h2 {
 }
 #values .content .cards .card {
   margin: 20px 0;
-  border-right: 1px solid #ffb100;
+  border-right: 1px solid #feba19;
 }
 #values .content .cards .card:last-child {
   border: none;
@@ -472,7 +472,7 @@ h2 {
 }
 #ctas .card a {
   font-size: 22px;
-  color: #ffb100;
+  color: #feba19;
   font-weight: bold;
 }
 #ctas .card a:hover {
@@ -482,7 +482,7 @@ h2 {
 #footer {
   margin-top: 150px;
   padding-bottom: 20px;
-  background-color: #111111;
+  background-color: #353535;
   position: relative;
 }
 #footer .contact-card {
