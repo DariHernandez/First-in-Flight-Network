@@ -3,8 +3,8 @@
     &.burger
         $logo-width: 100px
         $menu-btn-width: 80px
-        $responsive-tablet: 1000px
-        $responsive-phone: 680px
+        $responsive-tablet: 1100px
+        $responsive-phone: 770px
 
         display: flex
         align-items: center
@@ -53,20 +53,23 @@
             // Hide nav
             &.clossed
                 nav
-                    right: -250px
+                    right: -350px
 
             .btn.cta
                 display: none
 
             .btn.display, .btn.close
                 display: inline-block
-                width: $menu-btn-width
                 height: auto
                 fill: $color-a
 
                 svg
-                    width: 100%
-                    height: auto
+                    width: 50px
+                    height: 50px
+
+            .btn.display
+                padding-right: 0
+
 
             nav 
                 position: fixed
@@ -90,6 +93,9 @@
 
                         &:first-child
                             padding: 0
+                            display: flex
+                            align-items: center
+                            justify-content: center
 
                         a
                             padding: 10px 0

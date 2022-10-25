@@ -217,33 +217,35 @@ h2 {
   color: #0133af;
   border-bottom: 4px solid #feba19;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   #header.burger {
     flex-direction: column;
     margin: 0;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 770px) {
   #header.burger {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 5%;
   }
   #header.burger.clossed nav {
-    right: -250px;
+    right: -350px;
   }
   #header.burger .btn.cta {
     display: none;
   }
   #header.burger .btn.display, #header.burger .btn.close {
     display: inline-block;
-    width: 80px;
     height: auto;
     fill: #0133af;
   }
   #header.burger .btn.display svg, #header.burger .btn.close svg {
-    width: 100%;
-    height: auto;
+    width: 50px;
+    height: 50px;
+  }
+  #header.burger .btn.display {
+    padding-right: 0;
   }
   #header.burger nav {
     position: fixed;
@@ -267,6 +269,9 @@ h2 {
   }
   #header.burger nav ul li:first-child {
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #header.burger nav ul li a {
     padding: 10px 0;
