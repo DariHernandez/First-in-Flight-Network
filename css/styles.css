@@ -221,6 +221,7 @@ h2 {
   #header.burger {
     flex-direction: column;
     margin: 0;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 770px) {
@@ -228,6 +229,7 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 5%;
+    margin-bottom: 0px;
   }
   #header.burger.clossed nav {
     right: -350px;
@@ -354,6 +356,51 @@ h2 {
   width: 50%;
   height: 100%;
   z-index: 2;
+}
+@media screen and (max-width: 1050px) {
+  #hero .image {
+    position: initial;
+    height: 100vw;
+    width: 100%;
+    background-position-y: top;
+  }
+  #hero .content-wrapper {
+    padding-bottom: 250px;
+  }
+  #hero .content-wrapper .content {
+    width: 100%;
+    text-align: center;
+  }
+  #hero .content-wrapper .contact {
+    margin-bottom: 0;
+    width: calc(100% - 80px);
+  }
+  #hero .content-wrapper .contact form fieldset input:not(.btn.cta) {
+    width: calc(33% - 104px) !important;
+    margin: 10px;
+  }
+  #hero .content-wrapper .contact form fieldset input.btn.cta {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #hero .content-wrapper {
+    padding-bottom: 440px;
+  }
+  #hero .content-wrapper .contact form fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #hero .content-wrapper .contact form fieldset input:not(.btn.cta) {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  #hero .content-wrapper h1 {
+    font-size: 30px;
+  }
 }
 
 #about {
