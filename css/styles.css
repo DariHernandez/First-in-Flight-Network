@@ -481,6 +481,11 @@ h2 {
 #speciality .cards .card h3 {
   color: #ffffff;
 }
+@media screen and (max-width: 750px) {
+  #speciality .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 #values {
   margin-top: 50px;
