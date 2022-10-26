@@ -19,16 +19,26 @@
 
             .card
                 margin: 20px 0
-
                 border-right: 1px solid $color-b
+
                 &:last-child
                     border: none
 
                 img
-                    width: 150px
-                    border-radius: 50%
+                    width: 100px
 
                 
+    @media screen and (max-width: 840px)
+        .content
+            .cards
+                grid-template-columns: repeat(2, 1fr)
+                
+                .card
+                    border: none
 
-    // @media screen and (max-width: $regular-width-media-query)
+    @media screen and (max-width: 400px)
+        .content
+            .cards
+                grid-template-columns: repeat(1, 1fr)
+
         

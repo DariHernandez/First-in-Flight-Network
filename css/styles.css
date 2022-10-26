@@ -514,8 +514,20 @@ h2 {
   border: none;
 }
 #values .content .cards .card img {
-  width: 150px;
-  border-radius: 50%;
+  width: 100px;
+}
+@media screen and (max-width: 840px) {
+  #values .content .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #values .content .cards .card {
+    border: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #values .content .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 #ctas {
