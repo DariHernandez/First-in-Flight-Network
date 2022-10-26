@@ -558,6 +558,21 @@ h2 {
 #ctas .card a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 550px) {
+  #ctas .card {
+    flex-direction: column;
+  }
+  #ctas .card:last-child {
+    margin-top: 80px;
+    flex-direction: column-reverse;
+  }
+  #ctas .card .text {
+    width: 100%;
+  }
+  #ctas .card img {
+    width: 80%;
+  }
+}
 
 #footer {
   margin-top: 150px;

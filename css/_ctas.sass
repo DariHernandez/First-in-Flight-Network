@@ -25,3 +25,17 @@
 
             &:hover
                 text-decoration: underline            
+
+    @media screen and (max-width: 550px)
+        .card
+            flex-direction: column
+
+            &:last-child
+                margin-top: 80px
+                flex-direction: column-reverse
+
+            .text
+                width: 100%
+
+            img
+                width: 80%
