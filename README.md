@@ -20,6 +20,8 @@
 -->
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Fiverr][fiverr-shield]][fiverr-url]
+[![Gmail][gmail-shield]][gmail-url]
 
 
 
@@ -72,8 +74,6 @@
 
 This is a landing page for a client. It was built using HTML, CSS, and vanilla JavaScript. The page is fully responsive and has a smooth scroll effect. The page is hosted on Github Pages.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -96,15 +96,11 @@ This is a landing page for a client. It was built using HTML, CSS, and vanilla J
 </a>
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Visit the page at [https://www.firstinflightnetwork.com](https://www.firstinflightnetwork.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -120,14 +116,12 @@ Visit the page at [https://www.firstinflightnetwork.com](https://www.firstinflig
 
 See the [open issues](https://github.com/darideveloper/First-in-Flight-Network/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -138,7 +132,6 @@ Darideveloper - [@developerdari](https://twitter.com/developerdari) - daridevelo
 
 Project Link: [https://github.com/darideveloper/First-in-Flight-Network/settings/pages](https://github.com/darideveloper/First-in-Flight-Network/settings/pages)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -157,3 +150,9 @@ Project Link: [https://github.com/darideveloper/First-in-Flight-Network/settings
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/francisco-dari-hernandez-6456b6181/
 [product-screenshot]: ./imgs/screenshot.gif
+[gmail-shield]: https://img.shields.io/badge/-gmail-black.svg?style=for-the-badge&logo=gmail&colorB=555&logoColor=white
+[fiverr-shield]: https://img.shields.io/badge/-fiverr-black.svg?style=for-the-badge&logo=fiverr&colorB=555&logoColor=white
+[gmail-url]: mailto:darideveloper@gmail.com
+[fiverr-url]: https://www.fiverr.com/darideveloper
+
+<span>Last code update: <time datetime="2022-10-28" class="last-update">2022-10-28</time>
