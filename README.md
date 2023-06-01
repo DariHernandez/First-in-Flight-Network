@@ -49,11 +49,11 @@ This is a landing page for a client. It was built using HTML, CSS, and vanilla J
 
 # Roadmap
 
-- [x] Design based in client's requirements\r
-- [x] Add a contact form\r
-- [x] Hover animations\r
-- [x] Custom email\r
-- [x] Custom domain\r
+- [x] Design based in client's requirements
+- [x] Add a contact form
+- [x] Hover animations
+- [x] Custom email
+- [x] Custom domain
 - [x] Hosting on a server
 
 
